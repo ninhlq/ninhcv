@@ -101,6 +101,16 @@
                 <input type="number" class="form-control" name="wordpress" required="required">
             </div>
 
+            <div class="form-group">
+                <label for="exampleInputEmail">Creative Design</label>
+                <input type="text" class="form-control" name="creative_design" required="required">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail">Wordpress Themes</label>
+                <input type="text" class="form-control" name="wordpress_themes" required="required">
+            </div>
+
 
         </div>
         <div class="col-md-4">
@@ -127,6 +137,16 @@
             <div class="form-group">
                 <label for="exampleInputEmail">company</label>
                 <textarea type="text" class="form-control" name="company" rows="3" required="required"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail">User Experiences</label>
+                <input type="text" class="form-control" name="user_experiences" required="required">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail">Unlimited Support</label>
+                <input type="text" class="form-control" name="unlimited_support" required="required">
             </div>
         </div>
     </div>

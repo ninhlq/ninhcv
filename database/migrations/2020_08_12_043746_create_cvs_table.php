@@ -30,9 +30,13 @@ class CreateCvsTable extends Migration
             $table->integer('laravel');
             $table->string('skill4');
             $table->integer('wordpress');
+            $table->string('creative_design');
             $table->string('design');
+            $table->string('wordpress_themes');
             $table->string('themes');
+            $table->string('user_experiences');
             $table->string('user_experience');
+            $table->string('unlimited_support');
             $table->string('support');
             $table->string('description');
             $table->string('introduce');

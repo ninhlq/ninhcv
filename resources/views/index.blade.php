@@ -317,7 +317,7 @@
                                                     <i class="fa fa-smile-o"></i>
                                                 </div>
                                                 <div class="service-content">
-                                                    <h3>Creative Design</h3>
+                                                    <h3>{{$item->creative_design}}</h3>
                                                     <p>{{$item->design}}</p>
                                                 </div>
                                             </div>
@@ -330,7 +330,7 @@
                                                     <i class="fa fa-wordpress"></i>
                                                 </div>
                                                 <div class="service-content">
-                                                    <h3>Wordpress Themes</h3>
+                                                    <h3>{{$item->wordpress_themes}}</h3>
                                                     <p>{{$item->themes}}</p>
                                                 </div>
                                             </div>
@@ -343,7 +343,7 @@
                                                     <i class="fa fa-user-o"></i>
                                                 </div>
                                                 <div class="service-content">
-                                                    <h3>User Experience</h3>
+                                                    <h3>{{$item->user_experiences}}</h3>
                                                     <p>{{$item->user_experience}}</p>
                                                 </div>
                                             </div>
@@ -356,7 +356,7 @@
                                                     <i class="fa fa-support"></i>
                                                 </div>
                                                 <div class="service-content">
-                                                    <h3>Unlimited Support</h3>
+                                                    <h3>{{$item->unlimited_support}}</h3>
                                                     <p>{{$item->support}}</p>
                                                 </div>
                                             </div>

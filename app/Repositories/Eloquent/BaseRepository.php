@@ -89,4 +89,9 @@ abstract class BaseRepository implements BaseRepositoryInterface
 
         return false;
     }
+
+    public function save()
+    {
+        return $this->save();
+    }
 }

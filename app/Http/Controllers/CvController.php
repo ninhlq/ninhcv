@@ -60,6 +60,10 @@ class CvController extends Controller
         $cv->skill4 = $request->get('skill4');
         $cv->design = $request->get('design');
         $cv->themes = $request->get('themes');
+        $cv->creative_design = $request->get('creative_design');
+        $cv->wordpress_themes = $request->get('wordpress_themes');
+        $cv->user_experiences = $request->get('user_experiences');
+        $cv->unlimited_support = $request->get('unlimited_support');
         $cv->user_experience = $request->get('user_experience');
         $cv->support = $request->get('support');
         $cv->company = $request->get('company');
@@ -72,7 +76,6 @@ class CvController extends Controller
             $cv->avatar = $name;
         }
         $cv->save();
-
         return redirect()->route ('index')->with('cv');
     }
 
@@ -83,7 +86,7 @@ class CvController extends Controller
 
     public function add(Request $request)
     {
-        $resume = $this->resumeRepository;
+        $resume = $this->resumeRepository->new();
         $resume->facebook = $request->get('facebook');
         $resume->google = $request->get('google');
         $resume->abc = $request->get('abc');
@@ -92,8 +95,9 @@ class CvController extends Controller
         $resume->high = $request->get('high');
         $resume->manager = $request->get('manager');
         $resume->designer = $request->get('designer');
+        //dd($resume);
         $resume->save();
-        return redirect()->route('index');
+        return redirect()->route('index')->with('resume');
     }
 
     public function portfolio()
@@ -163,6 +167,10 @@ class CvController extends Controller
         $cv->support = $request->get('support');
         $cv->company = $request->get('company');
         $cv->introduce = $request->get('introduce');
+        $cv->creative_design = $request->get('creative_design');
+        $cv->wordpress_themes = $request->get('wordpress_themes');
+        $cv->user_experiences = $request->get('user_experiences');
+        $cv->unlimited_support = $request->get('unlimited_support');
         $cv->save();
         return redirect()->route('index')->with('cv');
     }

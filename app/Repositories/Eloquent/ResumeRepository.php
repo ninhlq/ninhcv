@@ -17,4 +17,10 @@ class ResumeRepository extends BaseRepository implements ResumeRepositoryInterfa
     {
         return Resume::all();
     }
+
+    public function new()
+    {
+        return new Resume;
+    }
+
 }
